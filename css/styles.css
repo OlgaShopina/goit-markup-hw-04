@@ -105,6 +105,8 @@ img {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   font-family: var(--main-front);
   font-weight: 500;
   font-size: 14px;
@@ -298,10 +300,6 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
-
-.team-text {
-  width: 270px;
-}
 /*==========END FUNCTIONAL==========*/
 
 /*==========TEAM==========*/
@@ -360,13 +358,15 @@ img {
 
 .team-text {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /*padding-top: 30px;
+  padding-bottom: 30px;*/
+  padding: 30px 32px;
   border: 2px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
 }
 
 .modal-item:not(:last-child) {
@@ -385,8 +385,8 @@ img {
 
 .social-list {
   display: flex;
-  align-items: center;
-  margin-left: 32px;
+  /*align-items: center;
+  margin-left: 32px;*/
 }
 
 .social-list-item:not(:last-child) {
@@ -403,6 +403,7 @@ img {
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
+
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--white-color);
@@ -417,13 +418,13 @@ img {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: var(--section-pt);
+  /*padding-top: var(--section-pt);*/
   margin-bottom: 50px;
 }
 
 .clients-list {
   display: flex;
-  padding-bottom: var(--section-pb);
+  /*padding-bottom: var(--section-pb);*/
 }
 
 .client-box {
@@ -458,10 +459,14 @@ img {
   border: 1px solid var(--accent-color);
 }
 
-.clients-link {
+.clients-link:not(:last-child) {
   margin-right: 30px;
 }
 
+.clients {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
 /*==========END CLIENTS==========*/
 
 /*===============PORTFOLIO===============*/
@@ -474,6 +479,7 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .modal-btn:hover,
